@@ -107,10 +107,15 @@ document.getElementById("answer").innerHTML = answerArray.join(" ");
 
   <script>
   var ltr ;
-  function litero(elekto) {
-      ltr = elekto;
+  function litero(elekto)
+    {
+    montruLiteron(elekto);
+     Letter();
+    }
+      function montruLiteron(ltr) 
+      {
   document.getElementById("show1").innerHTML=ltr;
-  }
+    }
 
   </script>
 
