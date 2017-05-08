@@ -5,44 +5,40 @@
   <title>hangman type game</title>
 </head>
 
+<body onload = "startUp()">
+  <h2>Guess a letter</h2>
+
+<p id="montru"></p>
+<p id="montru2"></p>
+
+
+<script src="vortListo.js"></script>
+
   <script>
-
-//define word selection
-  var randomWordArr = ["biero", "vino", "piro", "frukto", "viando", "anaso", "pomo", "pico","stulta","ritmo","inkvizicio"];
-
-//choose a random word from the above array
-  var randomWord = randomWordArr[Math.floor(Math.random() * randomWordArr.length)];
-
-//global variables
-  var s;
-  var count = 0;
-  //empty array to store guesses
-  var answerArray = [];
-
-//fill the answer array with the number of underscores matching the word length
-  function startUp() {
-    for (var i = 0; i < randomWord.length; i++) {
-answerArray[i] = "_";
-}
-
-//put them in a string
-s = answerArray.join(" ");
-document.getElementById("answer").innerHTML = s;
-}
-//GOOD UP TO HERE
-</script>
-
-
-
-
-
+  //choose a random word from the above array
+    var randomWord = vortListo[Math.floor(Math.random() * vortListo.length)];
+  //global variables
+    var cheno;
+    var count = 0;
+    //empty array to store guesses
+    var answerArray = [];
+  //fill the answer array with the number of underscores matching the word length
+    function startUp() {
+      for (var i = 0; i < randomWord.length; i++) {
+  answerArray[i] = "_";
+  }
+  //put them in a string
+  cheno = answerArray.join(" ");
+  document.getElementById("answer").innerHTML = cheno;
+  }
+  document.getElementById("montru2").innerHTML = "enhavas " + vortListo.length + " vortoj";
+  </script>
 
 <script>
 function Letter()
 {
-  //here is the letter typed by the user into the box
-  var letter =document.getElementById("show1").innerHTML
-
+  //here is the letter typed by the user
+  var letter =document.getElementById("montru").innerHTML
 //valid input checking
   if (letter.length > 0)
   {
@@ -64,13 +60,8 @@ document.getElementById("answer").innerHTML = answerArray.join(" ");
 </script>
 
 
-
-
-
-<body onload = "startUp()">
-  <h2>Guess a letter</h2>
-
-  <p id="show1"></p>
+    <br>
+    <br>
 
     <button onclick="litero('ŝ')">ŝ</button>
     <button onclick="litero('ŭ')">ŭ</button>
@@ -111,18 +102,11 @@ document.getElementById("answer").innerHTML = answerArray.join(" ");
     montruLiteron(elekto);
      Letter();
     }
-      function montruLiteron(ltr) 
+      function montruLiteron(ltr)
       {
-  document.getElementById("show1").innerHTML=ltr;
+  document.getElementById("montru").innerHTML=ltr;
     }
-
   </script>
-
-
-
- 
- 
-
 
   <p id = "answer"></p>
   <p id = "counter"></p>
