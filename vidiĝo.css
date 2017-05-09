@@ -1,0 +1,31 @@
+<style>
+
+body {
+background-color: #777799;
+}
+
+.button {background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;}
+
+h2 {
+color: pink;
+text-align: center;
+}
+
+p {font-family: verdana;
+font-size: 32px;
+text-align: center;
+}
+
+p1 {font-family: verdana;
+font-size: 14px;
+text-align: center;
+}
+
+</style>
