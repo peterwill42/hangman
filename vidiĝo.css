@@ -11,27 +11,40 @@ button {
      width: 37px;
      height: 37px;
      border-radius: 10px;
-     margin:5px
+     margin:5px;
  }
 
-#green {  -webkit-border-radius: 7px 7px 7px 7px;
+ input {
+   background-color: #333333;
+   color: #FFFFFF;
+   font-size: 22px;
+   height: 37px;
+   border-radius: 10px;
+   margin:5px;
+ }
+
+#vortMalantaŭKoloro {
 border-radius: 7px 7px 7px 7px;
-background-color: #99DD99;
+background-color: LightSeaGreen;
 padding: 15px
 }
 
 h2 {
 color: pink;
 text-align: center;
+font-size: 32px;
+font-family: cursive;
 }
 
-p {font-family: verdana;
-font-size: 36px;
+p
+{font-family: verdana;
+font-size: 40px;
 text-align: center;
 color: #000000
 }
 
-p1 {font-family: verdana;
+p1
+{font-family: verdana;
 font-size: 14px;
 text-align: center;
 }
