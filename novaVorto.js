@@ -17,4 +17,4 @@
   cheno = answerArray.join(" ");
   document.getElementById("respondo").innerHTML = cheno;
   document.getElementById("montru2").innerHTML = "enhavas " + vortListo.length + " vortoj";
-}
+};
