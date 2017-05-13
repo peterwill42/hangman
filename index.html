@@ -8,31 +8,36 @@
 
 <body onload = "novaLudo()">
 
+
 <script src="vortListo.js"></script>
 <script src="novaVorto.js"></script>
 <script src="kongruuLeteron.js"></script>
 <script src="enliteru.js"></script>
+<script src="malkaŝu.js"></script>
 
 <table align=center>
     <tr>
-        <td align="center"><h2>vortmalkovro</h2></td>
+        <td id="mk1" align="center"><h2>vortmalkovro</h2></td>
     </tr>
+
     <tr>
-        <td id="vortMalantaŭKoloro"><p id = "respondo"></p></td>
+        <td id="vortMalantaŭKoloro"><p id ="respondo"></p></td>
     </tr>
+
     <tr>
-        <td> <table width=100%>
-          <tr>
-            <td width=49%><p1 id= "montru">&nbsp;</p1></td>
-            <td align=right><p1 id = "provado"></p1></td>
-          </tr>
-        </table> </td>
+        <td id="mk1" height=30px align=center><p1 id="malkaŝu"></p1></td>
     </tr>
+
     <tr>
-      <td>&nbsp;</td>
+        <td id="mk1" height=30px align=right><p1 id ="provado"></p1></td>
     </tr>
+
     <tr>
-        <td><table align=center>
+        <td id="mk1" height=30px><p2 id="amasigu"></p2></td>
+    </tr>
+
+    <tr>
+        <td><table id="mk1" align=center>
             <tr align=center>
               <td><button onclick="litero('ŝ')">ŝ</button></td>
               <td><button onclick="litero('ŭ')">ŭ</button></td>
@@ -71,22 +76,23 @@
             </tr>
           </table></td>
             <tr height=70px>
-              <td>&nbsp;</td>
+              <td id="mk1" height=20px><p1 id="montru"></p1></td>
             </tr>
           <tr>
               <td><table width=100%>
                 <tr>
-                  <td width=70%><p1 id= "enhavo"></p1></td>
+                  <!-- butono por malkaŝi la aktivan vorton-->
+                  <td id="mk1" align=left width=130px><input type="button" value="malkaŝigu"
+                    onClick="malkaŝu()"></td>
+                  <td id="mk1" align=center><p1 id= "enhavo"></p1></td>
                   <!-- butono por aktualigi la paĝon por eligi novan vorton-->
-                  <td align=right><input type="button" value="nova vorto"
+                  <td id="mk1" align=right width=130px><input type="button" value="nova vorto"
                     onClick="window.location.reload()"></td>
                 </tr>
               </table> </td>
           </tr>
     </tr>
 </table>
-
-
 
 </body>
 
