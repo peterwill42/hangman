@@ -5,7 +5,7 @@
 }
 
 button {
-     background-color: #333333;
+     background-color: #003300;
      color: #FFFFFF;
      font-size: 22px;
      width: 37px;
@@ -23,30 +23,50 @@ button {
    margin:5px;
  }
 
-#vortMalantaŭKoloro {
+#vortMalantaŭKoloro
+{
 border-radius: 7px 7px 7px 7px;
 background-color: LightSeaGreen;
-padding: 15px
+padding: 5px
 }
 
-h2 {
-color: pink;
-text-align: center;
-font-size: 32px;
-font-family: cursive;
+#mk1
+{
+border-radius: 7px 7px 7px 7px;
+background-color: SeaGreen;
+padding: 5px
 }
+
+h2
+{
+  color: brown;
+  text-align: center;
+  font-size: 32px;
+  font-family: verdana;
+  color: lightyellow;
+  }
 
 p
-{font-family: verdana;
-font-size: 40px;
-text-align: center;
-color: #000000
+{
+  font-family: verdana;
+  font-size: 42px;
+  text-align: center;
+  color: #000000
 }
 
 p1
-{font-family: verdana;
-font-size: 14px;
-text-align: center;
+{
+  font-family: verdana;
+  font-size: 14px;
+  text-align: center;
+}
+
+p2
+{
+  font-family: verdana;
+  font-size: 24px;
+  text-align: center;
+  color: black;
 }
 
 </style>
