@@ -12,23 +12,11 @@ button
      width: 37px;
      height: 37px;
      border-radius: 10px;
-     margin:5px;
+     margin:6px;
  }
-
-#but
- {
-   background-color: #333333;
-   color: #FFFFFF;
-   font-family: verdana;
-   font-size: 22px;
-   height: 37px;
-   border-radius: 10px;
-   margin:5px;
- }
-
 
  input {
-   background-color: #333333;
+   background-color: #003300;
    color: #FFFFFF;
    font-size: 22px;
    height: 37px;
@@ -49,6 +37,11 @@ border-radius: 7px 7px 7px 7px;
 background-color: SeaGreen;
 padding: 5px
 }
+
+#space {
+    width:184px;
+    this bit to widen the bottom buttons
+ }
 
 h2
 {
@@ -81,6 +74,14 @@ p2
   font-size: 24px;
   text-align: center;
   color: black;
+}
+
+p3
+{
+  font-family: verdana;
+  font-size: 42px;
+  text-align: center;
+  color: white;
 }
 
 </style>

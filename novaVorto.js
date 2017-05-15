@@ -16,6 +16,6 @@
   //put them in a string
   cheno = answerArray.join(" ");
   document.getElementById("respondo").innerHTML = cheno;
-  document.getElementById("enhavo").innerHTML = "enhavas " + vortListo.length + " vortoj";
-
+  document.getElementById("enhavo").innerHTML = "enhavo: " + vortListo.length + " vortoj";
+  document.getElementById("provado").innerHTML = dekalkulo;
 };
