@@ -35,6 +35,7 @@ dekalkulo = 10-poentoj;
 // if zero reveal answer
 if (dekalkulo <1)
 {
+  dekalkulo = 0;
   malkaŝu();
 }
 document.getElementById("provado").innerHTML = dekalkulo;
