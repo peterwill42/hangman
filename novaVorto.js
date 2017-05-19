@@ -1,5 +1,5 @@
 //choose a random word from the above array
-  var randomWord = vortListo[Math.floor(Math.random() * vortListo.length)];
+  var hazardaVorto = vortListo[Math.floor(Math.random() * vortListo.length)];
 //global variables
   var cheno = "";
   var count = 0;
@@ -10,7 +10,7 @@
   //fill the answer array with the number of underscores matching the word length
   function novaLudo()
   {
-  for (var i = 0; i < randomWord.length; i++) {
+  for (var i = 0; i < hazardaVorto.length; i++) {
   answerArray[i] = "_";
   }
   //put them in a string

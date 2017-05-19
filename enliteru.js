@@ -15,7 +15,7 @@ function montruLiteron(ltr)
   if (amasigu.length >= 28)
   {
     amasigu = [];
-    document.getElementById("malkaŝu").innerHTML = "sufiĉas"
+    document.getElementById("malkaŝu").innerHTML = "sufiĉas !"
   }
   document.getElementById("amasigu").innerHTML=amasigu.toUpperCase();
 };

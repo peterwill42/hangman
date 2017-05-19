@@ -8,12 +8,12 @@ var dekalkulo = 10;
 function Letter()
 {
   //here is the letter typed by the user
-  var letter =document.getElementById("montru").innerHTML
+  var letter =document.getElementById("montru").innerHTML;
 
-    for (var i = 0; i < randomWord.length; i++)
+    for (var i = 0; i < hazardaVorto.length; i++)
     {
       //if matching letter entered by user
-      if (randomWord[i] === letter)
+      if (hazardaVorto[i] === letter)
       {
         //assign it to letter
         answerArray[i] = letter;
