@@ -8,7 +8,7 @@ var dekalkulo = 10;
 function Letter()
 {
   //here is the letter typed by the user
-  var letter =elekto;
+  var letter =document.getElementById("amasigu").innerHTML;
 
     for (var i = 0; i < hazardaVorto.length; i++)
     {
