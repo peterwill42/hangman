@@ -2,131 +2,99 @@
 <html>
 <head>
   <meta content="text/html; charset=utf-8" http-equiv="content-type">
-  <title>hangman type game</title>
+  <link rel="stylesheet" type="text/css" href="vidiĝo.css">
+  <title>pendumito simila ludo</title>
 </head>
 
-  <script>
-
-//define word selection
-  var randomWordArr = ["biero", "vino", "piro", "frukto", "viando", "anaso", "pomo", "pico","stulta","ritmo","inkvizicio"];
-
-//choose a random word from the above array
-  var randomWord = randomWordArr[Math.floor(Math.random() * randomWordArr.length)];
-
-//global variables
-  var s;
-  var count = 0;
-  //empty array to store guesses
-  var answerArray = [];
-
-//fill the answer array with the number of underscores matching the word length
-  function startUp() {
-    for (var i = 0; i < randomWord.length; i++) {
-answerArray[i] = "_";
-}
-
-//put them in a string
-s = answerArray.join(" ");
-document.getElementById("answer").innerHTML = s;
-}
-//GOOD UP TO HERE
-</script>
+<body onload = "novaLudo()">
 
 
+<script src="vortListo.js"></script>
+<script src="novaVorto.js"></script>
+<script src="takso.js"></script>
+<script src="enliteru.js"></script>
+<script src="malkaŝu.js"></script>
 
+<table align=center>
+    <tr>
+        <td id="mk1" align="center" height=60px><img src="vortmalkovro.png"></td>
+    </tr>
 
+    <tr>
+      <td id="mk1" height=60px align=center><p3 id ="provado"></p3></td>
+    </tr>
 
+    <tr>
+        <td id="vortMalantaŭKoloro"><p id ="respondo"></p></td>
+    </tr>
 
-<script>
-function Letter()
-{
-  //here is the letter typed by the user into the box
-  var letter =document.getElementById("show1").innerHTML
+    <tr>
+        <td id="mk1" height=50px align=center><p4 id="malkaŝu"></p4></td>
+    </tr>
 
-//valid input checking
-  if (letter.length > 0)
-  {
-    for (var i = 0; i < randomWord.length; i++)
-    {
-//if valid letter entered by user
-      if (randomWord[i] === letter)
-      {
-        //assign it to letter
-        answerArray[i] = letter;
-      }
-    }
-//number of guesses
-count++;
-document.getElementById("counter").innerHTML = "Attempts: " + count;
-document.getElementById("answer").innerHTML = answerArray.join(" ");
-}
-}
-</script>
+    <tr>
+        <td id="mk1" height=50px><p2 id="amasigu"></p2></td>
+    </tr>
 
+    <tr>
+        <td><table id="mk1" align=center>
+            <tr align=center>
+              <td><button onclick="litero('ŝ')">ŝ</button></td>
+              <td><button onclick="litero('ŭ')">ŭ</button></td>
+              <td><button onclick="litero('e')">e</button></td>
+              <td><button onclick="litero('r')">r</button></td>
+              <td><button onclick="litero('t')">t</button></td>
+              <td><button onclick="litero('ĝ')">ĝ</button></td>
+              <td><button onclick="litero('u')">u</button></td>
+              <td><button onclick="litero('i')">i</button></td>
+              <td><button onclick="litero('o')">o</button></td>
+              <td><button onclick="litero('p')">p</button></td>
+            </tr>
+            <tr align=center>
+              <td><button onclick="litero('a')">a</button></td>
+              <td><button onclick="litero('s')">s</button></td>
+              <td><button onclick="litero('d')">d</button></td>
+              <td><button onclick="litero('f')">f</button></td>
+              <td><button onclick="litero('g')">g</button></td>
+              <td><button onclick="litero('h')">h</button></td>
+              <td><button onclick="litero('j')">j</button></td>
+              <td><button onclick="litero('k')">k</button></td>
+              <td><button onclick="litero('l')">l</button></td>
+              <td><button onclick="litero('ĵ')">ĵ</button></td>
+            </tr>
+            <tr align=center>
+              <td></td>
+              <td><button onclick="litero('z')">z</button></td>
+              <td><button onclick="litero('ĉ')">ĉ</button></td>
+              <td><button onclick="litero('c')">c</button></td>
+              <td><button onclick="litero('v')">v</button></td>
+              <td><button onclick="litero('b')">b</button></td>
+              <td><button onclick="litero('n')">n</button></td>
+              <td><button onclick="litero('m')">m</button></td>
+              <td><button onclick="litero('ĥ')">ĥ</button></td>
+              <td></td>
+            </tr>
 
+          </table></td>
+            <tr height=70px>
+              <td id="mk1" height=20px><p1 id="montru"></p1></td>
+            </tr>
+          <tr>
+              <td><table width=100%>
+                <tr>
+                  <!-- butono por malkaŝi la aktivan vorton-->
+                  <td id="mk1" align=left width=130px><input type="button" value="malkaŝigu"
+                    onClick="malkaŝu()"></td>
+                  <td id="mk1" align=center><p1 id= "enhavo"></p1></td>
+                  <!-- butono por aktualigi la paĝon por eligi novan vorton-->
+                  <td id="mk1" align=right width=130px><input type="button" value="nova vorto"
+                    onClick="window.location.reload()"></td>
+                </tr>
+              </table> </td>
+          </tr>
+    </tr>
+</table>
 
-
-
-<body onload = "startUp()">
-  <h2>Guess a letter</h2>
-
-  <p id="show1"></p>
-
-    <button onclick="litero('ŝ')">ŝ</button>
-    <button onclick="litero('ŭ')">ŭ</button>
-    <button onclick="litero('e')">e</button>
-    <button onclick="litero('r')">r</button>
-    <button onclick="litero('t')">t</button>
-    <button onclick="litero('ĝ')">ĝ</button>
-    <button onclick="litero('u')">u</button>
-    <button onclick="litero('i')">i</button>
-    <button onclick="litero('o')">o</button>
-    <button onclick="litero('p')">p</button>
-    <br>
-    <button onclick="litero('a')">a</button>
-    <button onclick="litero('s')">s</button>
-    <button onclick="litero('d')">d</button>
-    <button onclick="litero('f')">f</button>
-    <button onclick="litero('g')">g</button>
-    <button onclick="litero('h')">h</button>
-    <button onclick="litero('j')">j</button>
-    <button onclick="litero('k')">k</button>
-    <button onclick="litero('l')">l</button>
-    <button onclick="litero('ĵ')">ĵ</button>
-    <br>
-    <button onclick="litero('z')">z</button>
-    <button onclick="litero('ĉ')">ĉ</button>
-    <button onclick="litero('c')">c</button>
-    <button onclick="litero('v')">v</button>
-    <button onclick="litero('b')">b</button>
-    <button onclick="litero('n')">n</button>
-    <button onclick="litero('m')">m</button>
-    <button onclick="litero('ĥ')">ĥ</button>
-    <br>
-    <br>
-
-  <script>
-  var ltr ;
-  function litero(elekto) {
-    montruLiteron(elekto);
-     Letter();
-    }
-      function montruLiteron(ltr) 
-      {
-  document.getElementById("show1").innerHTML=ltr;
-    }
-
-  </script>
-
-
-
- 
- 
-
-
-  <p id = "answer"></p>
-  <p id = "counter"></p>
-  <p id = "stat"></p>
 </body>
 
 </html>
