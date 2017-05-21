@@ -2,6 +2,7 @@ var ltr = "" ;
 var amasigu = [];
 
 function litero(elekto) {
+  document.getElementById(elekto).style.visible = "false";
   montruLiteron(elekto);
    Letter(elekto);
  };
