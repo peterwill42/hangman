@@ -11,6 +11,7 @@ function litero(elekto) {
 
 function montruLiteron(ltr)
 {
+  document.getElementById("montru").innerHTML = ltr + "but";
   document.getElementById(ltr+"but").style.visiblity = "hidden";
   //here are the used letters
   amasigu = amasigu + ltr;
