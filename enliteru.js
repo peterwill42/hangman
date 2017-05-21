@@ -5,7 +5,7 @@ function litero(elekto) {
 
   montruLiteron(elekto);
    Letter(elekto);
-  document.getElementByID("montru").innerHTML=elekto+"but";
+  document.getElementById("montru").innerHTML=elekto+"but";
     document.getElementById(elekto+"but").style.visiblity = "hidden";
  };
 
