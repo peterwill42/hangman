@@ -16,7 +16,7 @@ function Letter(elekto)
       if (hazardaVorto[i] === letter)
       {
         //assign it to letter
-        answerArray[i] = letter;
+        respondaro[i] = letter;
         ĝusta++;
         if (ĝusta>0)
         {
@@ -40,5 +40,5 @@ if (dekalkulo <1)
 }
 document.getElementById("provado").innerHTML = dekalkulo;
 
-document.getElementById("respondo").innerHTML = answerArray.join(" ");
+document.getElementById("respondo").innerHTML = respondaro.join(" ");
 };

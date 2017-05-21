@@ -5,8 +5,6 @@ function litero(elekto) {
 
   montruLiteron(elekto);
    Letter(elekto);
- 
-
  };
 
 function montruLiteron(ltr)
