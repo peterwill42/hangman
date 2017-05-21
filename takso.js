@@ -5,10 +5,10 @@ var ĝusta = 0;
 //show countdown starting point for the new game display
 var dekalkulo = 10;
 
-function Letter()
+function Letter(elekto)
 {
   //here is the letter typed by the user
-  var letter =document.getElementById("montru").innerHTML;
+  var letter =elekto;
 
     for (var i = 0; i < hazardaVorto.length; i++)
     {
