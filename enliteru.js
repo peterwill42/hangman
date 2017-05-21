@@ -8,7 +8,6 @@ function litero(elekto) {
 
 function montruLiteron(ltr)
 {
-  document.getElementById("montru").innerHTML=ltr;
   //here are the used letters
   amasigu = amasigu + ltr;
   //limits number of key entries to avoid overflow
