@@ -3,7 +3,7 @@ var amasigu = [];
 
 function litero(elekto) {
   montruLiteron(elekto);
-   Letter();
+   Letter(elekto);
  };
 
 function montruLiteron(ltr)
