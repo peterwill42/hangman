@@ -2,11 +2,11 @@ var ltr = "" ;
 var amasigu = [];
 
 function litero(elekto) {
-
+  document.getElementById("montru").innerHTML = elekto + "but";
   montruLiteron(elekto);
    Letter(elekto);
-  document.getElementById("montru").innerHTML=elekto+"but";
-    document.getElementById(elekto+"but").style.visiblity = "hidden";
+ 
+   document.getElementById(elekto+"but").style.visiblity = "hidden";
  };
 
 function montruLiteron(ltr)
