@@ -11,8 +11,7 @@ function litero(elekto) {
 
 function montruLiteron(ltr)
 {
-  document.getElementById("montru").innerHTML = ltr + "but";
-  document.getElementById(ltr+"but").style.visiblity = "hidden";
+  document.getElementById(ltr+"but").style.visibility = "hidden";
   //here are the used letters
   amasigu = amasigu + ltr;
   //limits number of key entries to avoid overflow
