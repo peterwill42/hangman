@@ -2,9 +2,10 @@ var ltr = "" ;
 var amasigu = [];
 
 function litero(elekto) {
-  document.getElementById('elekto+"but"').style.visiblity = "hidden";
+
   montruLiteron(elekto);
    Letter(elekto);
+    document.getElementById(elekto+"but").style.visiblity = "hidden";
  };
 
 function montruLiteron(ltr)
