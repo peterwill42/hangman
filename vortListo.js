@@ -101,7 +101,7 @@ var vortListo = [
 "efikas", "efike", "efiki", "efikis", "efiko", "efikos", "efiku", "efikus",
 "egala", "ekbrili", "ekkoncio", "ekkrias", "ekkrii", "ekkriis", "ekkrios",
 "ekkriu", "ekkrius", "ekonomikisto", "ekonomio", "ekrano", "ekrigardi", "ekscita",
-"eksciti", "ekscito", "ekskremento", "ekskurso", "ekspozicio", "ekster",
+"eksciti", "ekscito", "ekskremento", "ekskurso", "eksperimenta", "ekspozicio", "ekster",
 "eksterterano", "eksterteranoj", "ekzamenas", "ekzameni", "ekzamenis", "ekzameno",
 "ekzamenos", "ekzamenu", "ekzamenus", "ekzemplo", "ekzemploj", "ekzercado",
 "ekzercas", "ekzerci", "ekzercis", "ekzerco", "ekzercos", "ekzercu", "ekzercus",

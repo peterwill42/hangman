@@ -7,16 +7,16 @@ var dekalkulo = 10;
 
 function skribo(elekto)
 {
-  //here is the letter typed by the user
-  var letter =elekto;
+  //here is the letter touched by the user
+  var tuŝo =elekto;
 
     for (var i = 0; i < hazardaVorto.length; i++)
     {
       //if matching letter entered by user
-      if (hazardaVorto[i] === letter)
+      if (hazardaVorto[i] === tuŝo)
       {
-        //assign it to letter
-        respondaro[i] = letter;
+        //assign it to tuŝo
+        respondaro[i] = tuŝo;
         ĝusta++;
         if (ĝusta>0)
         {
@@ -39,6 +39,6 @@ if (dekalkulo <1)
   malkaŝu();
 }
 document.getElementById("provado").innerHTML = dekalkulo;
-
 document.getElementById("respondo").innerHTML = respondaro.join(" ");
+
 };

@@ -24,24 +24,24 @@ button
 
 #vortMalantaŭKoloro
 {
-border-radius: 7px 7px 7px 7px;
-background-color: LightSeaGreen;
-height: 80px;
-padding: 5px
+  border-radius: 7px 7px 7px 7px;
+  background-color: LightSeaGreen;
+  height: 80px;
+  padding: 5px
 }
 
 #mk1
 {
-border-radius: 7px 7px 7px 7px;
-background-color: SeaGreen;
-padding: 5px
+  border-radius: 7px 7px 7px 7px;
+  background-color: SeaGreen;
+  padding: 5px
 }
 
 #mk2
 {
-border-radius: 7px 7px 7px 7px;
-background-color: SeaGreen;
-padding: 5px
+  border-radius: 7px 7px 7px 7px;
+  background-color: SeaGreen;
+  padding: 5px
 }
 
 
@@ -83,4 +83,12 @@ p5
   color: white;
   font-size: 16px;
   text-align: center
+}
+
+#selekto
+{
+  font-family: verdana;
+  color: khaki;
+  font-size: 20px;
+  background: royalblue;
 }
