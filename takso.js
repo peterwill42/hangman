@@ -5,7 +5,7 @@ var ĝusta = 0;
 //show countdown starting point for the new game display
 var dekalkulo = 10;
 
-function Letter(elekto)
+function skribo(elekto)
 {
   //here is the letter typed by the user
   var letter =elekto;
