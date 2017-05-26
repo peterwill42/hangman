@@ -1,7 +1,7 @@
-var selx=0;
+var selx=10;
 
-function niveloj(selx) {
-  var selx = document.getElementById("selekto").value;
-  //var selx = selekto.value;
+function niveloj() {
+  //var selx = document.getElementById("selekto").value;
+  var selx = selekto.value;
   document.getElementById("niv").innerHTML = selx;
 };

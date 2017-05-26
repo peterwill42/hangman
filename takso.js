@@ -31,7 +31,7 @@ vera=vera+ĝusta;
 vicoj++;
 poentoj = vicoj-vera;
 //set countdown starting number here
-dekalkulo = 10-poentoj;
+dekalkulo = selx-poentoj;
 // if zero reveal answer
 if (dekalkulo <1)
 {
