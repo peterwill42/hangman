@@ -1,6 +1,23 @@
+html
+{
+height: 100%;
+}
+
+
 body {
   background-color: lemonchiffon;
+  margin: 5;
+  padding: 5;
+  height: 100%;
 }
+
+
+#content
+{
+  width: auto;
+  min-height: 100%;
+}
+
 
 button
 {
@@ -89,6 +106,6 @@ p5
 {
   font-family: verdana;
   color: khaki;
-  font-size: 20px;
+  font-size: 30px;
   background: royalblue;
 }

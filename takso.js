@@ -2,8 +2,9 @@ var poentoj = 0;
 var vicoj = 0;
 var vera = 0;
 var ĝusta = 0;
-//show countdown starting point for the new game display
-var dekalkulo = 10;
+
+//show countdown starting point for the new game
+var dekalkulo = selx;
 
 function skribo(elekto)
 {

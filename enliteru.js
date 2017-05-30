@@ -1,16 +1,16 @@
 var ltr = "" ;
-var amasigu = [];
 
-function litero(elekto) {
-
+function litero(elekto)
+{
   montruLiteron(elekto);
-   skribo(elekto);
- };
+  skribo(elekto);
+};
 
 function montruLiteron(ltr)
 {
   document.getElementById(ltr+"but").style.visibility = "hidden";
-  //here are the used letters
+
+  /*//here are the used letters
   amasigu = amasigu + ltr;
   //limits number of key entries to avoid overflow
   if (amasigu.length >= 28)
@@ -18,5 +18,5 @@ function montruLiteron(ltr)
     amasigu = [];
     document.getElementById("malkaŝu").innerHTML = "sufiĉas !";
   }
-  document.getElementById("amasigu").innerHTML=amasigu.toUpperCase();
+  document.getElementById("amasigu").innerHTML=amasigu.toUpperCase();*/
 };

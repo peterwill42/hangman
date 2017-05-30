@@ -1,4 +1,4 @@
-//choose a random word from the above array
+//choose a random word from the vortListo array
   var hazardaVorto = vortListo[Math.floor(Math.random() * vortListo.length)];
 //global variable
   var cheno = "";
@@ -16,5 +16,4 @@
   document.getElementById("respondo").innerHTML = cheno;
   document.getElementById("enhavo").innerHTML = "enhavo: " + vortListo.length + " vortoj";
   document.getElementById("provado").innerHTML = dekalkulo;
-  selekto.onchange();
 };
