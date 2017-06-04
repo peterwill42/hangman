@@ -6,7 +6,7 @@ var ĝusta = 0;
 //show countdown starting point for the new game
 var dekalkulo = selx;
 
-function skribo(elekto)
+function skribo(elekto: string)
 {
   //here is the letter touched by the user
   var tuŝo =elekto;
@@ -39,7 +39,7 @@ if (dekalkulo <1)
   dekalkulo = 0;
   malkaŝu();
 }
-document.getElementById("provado").innerHTML = dekalkulo;
-document.getElementById("respondo").innerHTML = respondaro.join(" ");
+document.getElementById("provado")!.innerHTML = dekalkulo + "";
+document.getElementById("respondo")!.innerHTML = respondaro.join(" ");
 
 };
