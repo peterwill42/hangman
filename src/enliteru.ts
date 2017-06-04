@@ -1,14 +1,14 @@
 var ltr = "" ;
 
-function litero(elekto)
+function litero(elekto: string)
 {
   montruLiteron(elekto);
   skribo(elekto);
-};
+}
 
-function montruLiteron(ltr)
+function montruLiteron(ltr: string)
 {
-  document.getElementById(ltr+"but").style.visibility = "hidden";
+  document.getElementById(ltr+"but")!.style.visibility = "hidden";
 
   /*//here are the used letters
   amasigu = amasigu + ltr;
@@ -19,4 +19,4 @@ function montruLiteron(ltr)
     document.getElementById("malkaŝu").innerHTML = "sufiĉas !";
   }
   document.getElementById("amasigu").innerHTML=amasigu.toUpperCase();*/
-};
+}
