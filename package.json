@@ -1,0 +1,7 @@
+{
+  "name": "my-project",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "typescript": "^2.3.4"
+  }
+}
