@@ -89,12 +89,20 @@ p3
 p4
 {
   font-family: verdana;
-  color: black;
+  color: yellow;
   font-size: 24px;
   text-align: center
 }
 
 p5
+{
+  font-family: verdana;
+  color: white;
+  font-size: 16px;
+  text-align: center
+}
+
+p6
 {
   font-family: verdana;
   color: white;
