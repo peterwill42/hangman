@@ -1,9 +1,9 @@
 var ltr = "" ;
 
-function litero(elekto)
+function litero(elekto, game)
 {
   montruLiteron(elekto);
-  skribo(elekto);
+  skribo(elekto, game);
 };
 
 function montruLiteron(ltr)
