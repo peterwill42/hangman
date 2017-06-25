@@ -9,5 +9,5 @@
   game.cheno = game.respondaro.join(" ");
   document.getElementById("respondo").innerHTML = game.cheno;
   document.getElementById("enhavo").innerHTML = "enhavo: " + vortListo.length + " vortoj";
-  document.getElementById("provado").innerHTML = dekalkulo;
+  document.getElementById("provado").innerHTML = game.dekalkulo;
 };
