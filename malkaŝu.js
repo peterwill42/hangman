@@ -1,4 +1,4 @@
-function malkaŝu()
+function malkaŝu(game)
 {
-  document.getElementById("malkaŝu").innerHTML = "la vorto estas: " + hazardaVorto;
+  document.getElementById("malkaŝu").innerHTML = "la vorto estas: " + game.hazardaVorto;
 };
