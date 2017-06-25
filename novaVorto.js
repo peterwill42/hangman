@@ -1,19 +1,13 @@
-//choose a random word from the vortListo array
-  var hazardaVorto = vortListo[Math.floor(Math.random() * vortListo.length)];
-//global variable
-  var cheno = "";
-  //empty array to store guesses
-  var respondaro = [];
-
   //fill respondaro with the number of underscores matching the word length
-  function novaLudo()
+  function novaLudo(game)
   {
-  for (var i = 0; i < hazardaVorto.length; i++) {
-  respondaro[i] = "_";
+  
+  for (var i = 0; i < game.hazardaVorto.length; i++) {
+  game.respondaro[i] = "_";
   }
   //put them in a string
-  cheno = respondaro.join(" ");
-  document.getElementById("respondo").innerHTML = cheno;
+  game.cheno = game.respondaro.join(" ");
+  document.getElementById("respondo").innerHTML = game.cheno;
   document.getElementById("enhavo").innerHTML = "enhavo: " + vortListo.length + " vortoj";
   document.getElementById("provado").innerHTML = dekalkulo;
 };
