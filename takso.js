@@ -1,33 +1,23 @@
-var poentoj = 0;
-var vicoj = 0;
-var vera = 0;
-var ĝusta = 0;
-var korekta = 0;
-
-
-//show countdown starting point for the new game
-var dekalkulo = selx;
-
-function skribo(elekto)
+function skribo(elekto, game)
 {
   //here is the letter touched by the user
   var tuŝo =elekto;
 
-    for (var i = 0; i < hazardaVorto.length; i++)
+    for (var i = 0; i < game.hazardaVorto.length; i++)
     {
       //if matching letter entered by user
-      if (hazardaVorto[i] === tuŝo)
+      if (game.hazardaVorto[i] === tuŝo)
       {
         //assign it to tuŝo
-        respondaro[i] = tuŝo;
-        ĝusta++;
-        if (ĝusta>0)
+        game.respondaro[i] = tuŝo;
+        game.ĝusta++;
+        if (game.ĝusta>0)
         {
-          ĝusta = 1;
+          game.ĝusta = 1;
           //count correct letters
-          korekta = korekta + ĝusta;
+          game.korekta = game.korekta + game.ĝusta;
           //if all letters correct then win
-          if (korekta>=hazardaVorto.length)
+          if (game.korekta>=game.hazardaVorto.length)
           {
           document.getElementById("venkas").innerHTML = "VI VENKAS";
         }
@@ -36,20 +26,20 @@ function skribo(elekto)
     };
 
 //marking
-vera=vera+ĝusta;
-ĝusta=0;
-vicoj++;
-poentoj = vicoj-vera;
+game.vera=game.vera+game.ĝusta;
+game.ĝusta=0;
+game.vicoj++;
+game.poentoj = game.vicoj-game.vera;
 //set countdown starting number
-dekalkulo = selx-poentoj;
+game.dekalkulo = selx-game.poentoj;
 // if zero reveal answer
-if (dekalkulo <1)
+if (game.dekalkulo <1)
 {
-  dekalkulo = 0;
+  game.dekalkulo = 0;
   malkaŝu();
   document.getElementById("venkas").innerHTML = "pli bonan ŝancon venontfoje";
 }
-document.getElementById("provado").innerHTML = dekalkulo;
-document.getElementById("respondo").innerHTML = respondaro.join(" ");
+document.getElementById("provado").innerHTML = game.dekalkulo;
+document.getElementById("respondo").innerHTML = game.respondaro.join(" ");
 
 };
