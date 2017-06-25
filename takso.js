@@ -36,7 +36,7 @@ game.dekalkulo = selx-game.poentoj;
 if (game.dekalkulo <1)
 {
   game.dekalkulo = 0;
-  malkaŝu();
+  malkaŝu(game);
   document.getElementById("venkas").innerHTML = "pli bonan ŝancon venontfoje";
 }
 document.getElementById("provado").innerHTML = game.dekalkulo;
