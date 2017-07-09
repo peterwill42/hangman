@@ -9,8 +9,7 @@ var vortListo = [
   "agus", "ajlo", "akceptado", "akceptas", "akcepti", "akceptis", "akceptos",
   "akceptu", "akceptus", "akcidento", "asekuro", "akiri", "akra", "akrido",
   "akso", "aktiva",
-  "aktorino", "aktualigi", "akvo", "akvofalo", "alia", "alie", "aliflanke", "
-  aligatoro",
+  "aktorino", "aktualigi", "akvo", "akvofalo", "alia", "alie", "aliflanke", "aligatoro",
   "aliĝi", "aliloke", "alimaniere", "alirebla", "alklaki", "allogi", "almenaŭ",
   "almozo",
   "alportis", "alpreni", "alŝuti", "alta", "altulo", "alumeto", "alveni", "amanto",
