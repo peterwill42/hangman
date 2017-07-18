@@ -19,8 +19,14 @@ function skribo(elekto, game)
           //if all letters correct then win
           if (game.korekta>=game.hazardaVorto.length)
           {
-          document.getElementById("venkas").innerHTML = "VI VENKAS";
-        }
+          var num = Math.round(10*(game.dekalkulo/selx));
+
+          //comm(ent)
+          var comm = ["Ho! tio estis proksima", "En ordo", "Sufiĉe bona", "Ĝusta",
+          "Bona laboro", "Bone farita", "Bonege!", "Tre ege bona!", "Stelulo!", "Mirigulo!"];
+          document.getElementById("venkas").innerHTML = comm[num - 1];
+
+          }
         }
       }
     };
