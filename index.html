@@ -6,16 +6,10 @@
   <title>Vortmalkovro</title>
 </head>
 
-<body onload = "novaLudo(game)">
+<body>
 <div id="content">
 
-<script src="vortListo.js"></script>
-<script src="nivelo.js"></script>
-<script src="Ludo.js"></script>  
-<script src="novaVorto.js"></script>
-<script src="takso.js"></script>
-<script src="enliteru.js"></script>
-<script src="malkaŝu.js"></script>
+
 <!--<script src="nextGame.js"></script>-->
 
 
@@ -44,39 +38,39 @@
 
       <td><table id="mk1" align=center>
           <tr align=center>
-            <td><button onclick="litero('ŝ', game)" id="ŝbut">ŝ</button></td>
-            <td><button onclick="litero('ŭ', game)" id="ŭbut">ŭ</button></td>
-            <td><button onclick="litero('e', game)" id="ebut">e</button></td>
-            <td><button onclick="litero('r', game)" id="rbut">r</button></td>
-            <td><button onclick="litero('t', game)" id="tbut">t</button></td>
-            <td><button onclick="litero('ĝ', game)" id="ĝbut">ĝ</button></td>
-            <td><button onclick="litero('u', game)" id="ubut">u</button></td>
-            <td><button onclick="litero('i', game)" id="ibut">i</button></td>
-            <td><button onclick="litero('o', game)" id="obut">o</button></td>
-            <td><button onclick="litero('p', game)" id="pbut">p</button></td>
+            <td><button class="key" data-letter='ŝ' class="key" data-letter='ŝ' id="ŝbut">ŝ</button></td>
+            <td><button class="key" data-letter='ŭ' id="ŭbut">ŭ</button></td>
+            <td><button class="key" data-letter='e' id="ebut">e</button></td>
+            <td><button class="key" data-letter='r' id="rbut">r</button></td>
+            <td><button class="key" data-letter='t' id="tbut">t</button></td>
+            <td><button class="key" data-letter='ĝ' id="ĝbut">ĝ</button></td>
+            <td><button class="key" data-letter='u' id="ubut">u</button></td>
+            <td><button class="key" data-letter='i' id="ibut">i</button></td>
+            <td><button class="key" data-letter='o' id="obut">o</button></td>
+            <td><button class="key" data-letter='p' id="pbut">p</button></td>
           </tr>
           <tr align=center>
-            <td><button onclick="litero('a', game)" id="abut">a</button></td>
-            <td><button onclick="litero('s', game)" id="sbut">s</button></td>
-            <td><button onclick="litero('d', game)" id="dbut">d</button></td>
-            <td><button onclick="litero('f', game)" id="fbut">f</button></td>
-            <td><button onclick="litero('g', game)" id="gbut">g</button></td>
-            <td><button onclick="litero('h', game)" id="hbut">h</button></td>
-            <td><button onclick="litero('j', game)" id="jbut">j</button></td>
-            <td><button onclick="litero('k', game)" id="kbut">k</button></td>
-            <td><button onclick="litero('l', game)" id="lbut">l</button></td>
-            <td><button onclick="litero('ĵ', game)" id="ĵbut">ĵ</button></td>
+            <td><button class="key" data-letter='a' id="abut">a</button></td>
+            <td><button class="key" data-letter='s' id="sbut">s</button></td>
+            <td><button class="key" data-letter='d' id="dbut">d</button></td>
+            <td><button class="key" data-letter='f' id="fbut">f</button></td>
+            <td><button class="key" data-letter='g' id="gbut">g</button></td>
+            <td><button class="key" data-letter='h' id="hbut">h</button></td>
+            <td><button class="key" data-letter='j' id="jbut">j</button></td>
+            <td><button class="key" data-letter='k' id="kbut">k</button></td>
+            <td><button class="key" data-letter='l' id="lbut">l</button></td>
+            <td><button class="key" data-letter='ĵ' id="ĵbut">ĵ</button></td>
           </tr>
           <tr align=center>
             <td></td>
-            <td><button onclick="litero('z', game)" id="zbut">z</button></td>
-            <td><button onclick="litero('ĉ', game)" id="ĉbut">ĉ</button></td>
-            <td><button onclick="litero('c', game)" id="cbut">c</button></td>
-            <td><button onclick="litero('v', game)" id="vbut">v</button></td>
-            <td><button onclick="litero('b', game)" id="bbut">b</button></td>
-            <td><button onclick="litero('n', game)" id="nbut">n</button></td>
-            <td><button onclick="litero('m', game)" id="mbut">m</button></td>
-            <td><button onclick="litero('ĥ', game)" id="ĥbut">ĥ</button></td>
+            <td><button class="key" data-letter='z' id="zbut">z</button></td>
+            <td><button class="key" data-letter='ĉ' id="ĉbut">ĉ</button></td>
+            <td><button class="key" data-letter='c' id="cbut">c</button></td>
+            <td><button class="key" data-letter='v' id="vbut">v</button></td>
+            <td><button class="key" data-letter='b' id="bbut">b</button></td>
+            <td><button class="key" data-letter='n' id="nbut">n</button></td>
+            <td><button class="key" data-letter='m' id="mbut">m</button></td>
+            <td><button class="key" data-letter='ĥ' id="ĥbut">ĥ</button></td>
             <td></td>
           </tr>
         </table></td>
@@ -85,7 +79,7 @@
               <td><table width=100% height=70px>
                 <tr>
                   <td id="mk1" align=center width=130px>
-                    <select id="selekto" onchange="niveloj()">
+                    <select id="selekto">
                       <option value=6>6</option>
                       <option value=7>7</option>
                       <option value=8>8</option>
@@ -105,19 +99,23 @@
               <td><table width=100%>
                 <tr>
                   <!-- butono por malkaŝi la aktivan vorton-->
-                  <td id="mk1" align=left width=130px><input type="button" value="malkaŝigu"
-                    onClick="malkaŝu(game)"></td>
-                  <td id="mk1" align=center><p5 id= "enhavo"></p5></td>
+                  <td id="mk1" align=left width=130px><input id="mku" type="button" value="malkaŝigu"></td>
+                  <td id="mk2" align=center><p5 id= "enhavo"></p5></td>
                   <!-- butono por aktualigi la paĝon por eligi novan vorton-->
-                  <td id="mk1" align=right width=130px><input type="button" value="nova vorto"
-                      onClick="window.location.reload()"></td>
+                  <td id="mk3" align=right width=130px><input id='nv' type="button" value="nova vorto"></td>
                 </tr>
               </table></td>
           </tr>
 </table>
 
 </div>
-
+<script src="vortListo.js"></script>
+<script src="nivelo.js"></script>
+<script src="novaVorto.js"></script>
+<script src="takso.js"></script>
+<script src="enliteru.js"></script>
+<script src="malkaŝu.js"></script>
+<script src="Ludo.js"></script>  
 </body>
 
 </html>
