@@ -19,7 +19,8 @@ function newgame(){
 	}
 
 	Array.prototype.slice.call(document.getElementsByClassName('key')).map(function (element){
-		element.onclick=function(){ litero(element.getAttribute('data-letter'),ludo) }
+		element.onclick=function(){ litero(element.getAttribute('data-letter'),ludo) };
+		element.style.visibility = "visible"
 	})
 	document.getElementById('selekto').onchange=niveloj
 	document.getElementById('mku').onclick=function(){malkaŝu(ludo)}
