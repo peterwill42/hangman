@@ -1,4 +1,6 @@
-var game=
+function newgame(game){
+}
+  var game=
 {
 //choose a random word from the vortListo array
 hazardaVorto: vortListo[Math.floor(Math.random() * vortListo.length)],
@@ -17,3 +19,4 @@ respondaro : [],
   //show countdown starting point for the new game
   dekalkulo : selx
 }
+  
