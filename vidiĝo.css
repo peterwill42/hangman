@@ -47,7 +47,13 @@ button
   padding: 5px
 }
 
-#mk1 a, mk2 a, mk3 a
+#mk1
+{ border-radius: 7px 7px 7px 7px;
+  background-color: SeaGreen;
+  padding: 5px
+}
+
+#nv
 { border-radius: 7px 7px 7px 7px;
   background-color: SeaGreen;
   padding: 5px
