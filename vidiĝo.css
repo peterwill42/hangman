@@ -47,7 +47,7 @@ button
   padding: 5px
 }
 
-#mk1, #malk, #enha, #nova
+#mk1 a, #malk a, #enha a, #nova a
 {
   border-radius: 7px 7px 7px 7px;
   background-color: SeaGreen;
