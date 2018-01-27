@@ -1,7 +1,7 @@
   //fill respondaro with the number of underscores matching the word length
   function novaLudo(game)
   {
-  
+  document.getElementById("venkas").innerHTML=("");
   for (var i = 0; i < game.hazardaVorto.length; i++) {
   game.respondaro[i] = "_";
   }
