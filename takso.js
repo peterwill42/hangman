@@ -23,7 +23,7 @@ function skribo(elekto, game)
 
           //comm(ent)
           var comm = ["Ho! tio estis proksima", "En ordo", "Sufiĉe bona", "Ĝusta",
-          "Bona laboro", "Bone farita", "Bonege!", "Tre ege bona!", "Stelulo!", "Mirigulo!"];
+          "Bona laboro", "Bone farita", "Tre bona!", "Bonege!", "Stelulo!", "Mirigulo!"];
           document.getElementById("venkas").innerHTML = comm[num - 1];
 
           }
